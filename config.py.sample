@@ -3,7 +3,8 @@ IMAGE_HEIGHT = 600
 
 # directory with images to be annotated
 # will look for images only in top-level directory
-IMAGE_DIR = "images"
+import os
+IMAGE_DIR = os.path.abspath('images')
 
 # directory where annotations will be stored
 # there will be one folder per image im IMAGE_DIR
